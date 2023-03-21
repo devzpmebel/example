@@ -1,0 +1,48 @@
+/* Style the tab */
+.call-list {
+	overflow: hidden;
+	border-bottom: 1px solid #e5e7eb;
+	background-color: #fff;
+}
+
+.call-list--titile {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	color: #101828;
+}
+
+/* Style the buttons that are used to open the tab content */
+.call-list button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.call-list button:hover {
+	background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.call-list button.active {
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.call-list-filters {
+	display: flex;
+}

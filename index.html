@@ -1,0 +1,1424 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Onevoiplanet</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/select2.min.css">
+		<link rel="stylesheet" href="./css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+		<link rel="stylesheet" href="./css/styles.css">
+
+	</head>
+
+	<body class="home-page">
+		<div class="site-wrapper">
+
+			<aside class="sidebar sidebar--left">
+
+				<div class="side-menu">
+					<div class="main-menu__gradient hidden"></div>
+					<header class="side-menu__header">
+						<div class="site-logo">
+							<a class="logo-link" href="#">
+								<img src="./img/logo.svg" alt="site-logo">
+							</a>
+							
+						</div>
+
+						<div id="burger-menu" class="side-menu__burger">
+							<img src="img/burger-icon.svg" alt="burger-icon" class="side-menu__burger-icon">
+							<img src="img/burger-icon--hover.svg" alt="burger-icon" class="side-menu__burger-icon--hover">
+						</div>
+
+					</header><!-- ./side-menu__header -->
+
+					<nav class="main-menu">
+						<ul class="side-menu__list">
+							<li class="side-menu__list-item">
+								<a class="side-menu__link blank" href="#">
+									<img src="./img/homepage-icon.svg" alt="homepage-icon" class="link-icon">
+									<img src="./img/homepage-icon--hover.svg" alt="homepage-icon--hover"
+										class="link-icon--hover">
+									<span class="side-menu__link-name">Главная</span>
+								</a>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link" href="#">
+									<img src="./img/call-processing-icon.svg" alt="call-processing-icon" class="link-icon">
+									<img src="./img/call-processing-icon--hover.svg" alt="call-processing-icon--hover"
+										class="link-icon--hover">
+									<span class="side-menu__link-name">Обработка звонков</span>
+								</a>
+
+								<ul class="side-menu__sub-menu">
+									<li class="side-menu__list-item">
+										<span class="sub-menu__title">Обработка звонков</span>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">Номера подключенные к АТС</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">Настройки входных звонков</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">Переодресация по номеру клиента</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">Список транков</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">Сценарий IVR</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link">
+									<img src="./img/colleagues-icon.svg" alt="colleagues-icon" class="link-icon">
+									<img src="./img/colleagues-icon--hover.svg" alt="colleagues-icon--hover"
+										class="link-icon--hover">
+									<span class="side-menu__link-name">Сотрудники</span>
+								</a>
+
+								<ul class="side-menu__sub-menu">
+									<li class="side-menu__list-item">
+										<span class="sub-menu__title">Сотрудники</span>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">1</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">2</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">3</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link">
+									<img src="./img/settings-icon.svg" alt="settings-icon" class="link-icon">
+									<img src="./img/settings-icon--hover.svg" alt="settings-icon--hover"
+										class="link-icon--hover">
+									<span class="side-menu__link-name">Общие настройки</span>
+								</a>
+
+								<ul class="side-menu__sub-menu">
+									<li class="side-menu__list-item">
+										<span class="sub-menu__title">Общие настройки</span>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">1</a>
+									</li>
+									
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">2</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">3</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link">
+									<img src="./img/finance-icon.svg" alt="finance-icon" class="link-icon">
+									<img src="./img/finance-icon--hover.svg" alt="finance-icon--hover" class="link-icon--hover">
+									<span class="side-menu__link-name">Финансы</span>
+								</a>
+								
+								<ul class="side-menu__sub-menu">
+									<li class="side-menu__list-item">
+										<span class="sub-menu__title">Финансы</span>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">1</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">2</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">3</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link">
+									<img src="./img/statistics-icon.svg" alt="statistics-icon" class="link-icon">
+									<img src="./img/statistics-icon--hover.svg" alt="statistics-icon--hover"
+										class="link-icon--hover">
+									<span class="side-menu__link-name">Статистика</span>
+								</a>
+
+								<ul class="side-menu__sub-menu">
+									<li class="side-menu__list-item">
+										<span class="sub-menu__title">Статистика</span>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">1</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">2</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">3</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link">
+									<img src="./img/clients-icon.svg" alt="clients-icon" class="link-icon">
+									<img src="./img/clients-icon--hover.svg" alt="clients-icon--hover" class="link-icon--hover">
+									<span class="side-menu__link-name">Клиенты</span>
+								</a>
+
+								<ul class="side-menu__sub-menu">
+									<li class="side-menu__list-item">
+										<span class="sub-menu__title">Клиенты</span>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">1</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">2</a>
+									</li>
+
+									<li class="side-menu__list-item">
+										<a class="side-menu__link" href="#">3</a>
+									</li>
+
+								</ul>
+
+							</li>
+
+							<li class="side-menu__list-item">
+								<a class="side-menu__link  blank" href="#">
+									<img src="./img/widget-icon.svg" alt="settings-icon" class="link-icon">
+									<img src="./img/widget-icon--hover.svg" alt="settings-icon--hover" class="link-icon--hover">
+									<span class="side-menu__link-name">Виджет</span>
+								</a>
+
+							</li>
+
+						</ul><!-- ./side-menu__list -->
+
+					</nav><!-- ./main-menu -->
+
+					<footer class="side-menu__footer">
+						<div class="side-menu__list-item">
+							<a class="side-menu__link blank" href="#">
+								<img src="./img/support-icon.svg" alt="support-icon" class="link-icon">
+								<img src="./img/support-icon--hover.svg" alt="support-icon--hover" class="link-icon--hover">
+								<span class="side-menu__link-name">Поддержка</span>
+								<span class="side-menu__link-counter">3</span>
+								<span class="side-menu__link-counter--marker"></span>
+							</a><!-- ./side-menu__link -->
+
+						</div><!-- ./side-menu__list-item -->
+
+						<div class="side-menu__list-item wallet--link">
+							<a class="side-menu__link blank" href="#">
+								<img src="./img/wallet-icon.svg" alt="wallet-icon" class="link-icon">
+								<img src="./img/wallet-icon--hover.svg" alt="wallet-icon--hover" class="link-icon--hover">
+								<span class="side-menu__link-name">Кошелек</span>
+							</a><!-- ./side-menu__link -->
+
+						</div><!-- ./side-menu__list-item -->
+
+						<div class="package-panel">
+							<div class="package-panel__finance">
+
+								<div class="package-panel__balance">
+									<div class="package-panel__balance-title">Баланс</div>
+									<div class="package-panel__balance-sum">959.32$</div>
+									<a href="#" class="package-panel__balance-add">пополнить</a>
+								</div><!-- ./package-panel__balance -->
+
+								<div class="package-panel__limit">
+									<span class="package-panel__limit-title">Лимит</span>
+									<span class="package-panel__limit-sum">0.00$</span>
+								</div><!-- ./package-panel__limit -->
+
+							</div><!-- ./package-panel__finance -->
+
+							<div class="package-panel__info">
+								<p class="package-panel__title">Пакет</p>
+								<div class="package-panel__description">
+									<span class="package-panel__description-title">Максимальный</span>
+									<a href="#" class="package-panel__change-package">изменить</a>
+								</div>
+
+							</div> <!-- ./package-panel__info -->
+
+						</div><!-- ./package-panel -->
+
+						<div class="user-auth">
+							<a href="#" class="user-auth__link">
+
+								<div class="user-auth__avatar">
+								<img class="user-auth__img" src="./img/avatar.jpg" alt="profileImg">
+								</div>
+					
+								<div class="user-auth__info">
+								<div class="user-auth__nickname">babanovdmitriy</div>
+								<div class="user-auth__position">Администратор</div>
+								</div>
+
+							</a>
+
+							<button class="login-button">
+								<img src="./img/login.svg" alt="login-icon" class="login-icon">
+								<img src="./img/login--hover.svg" alt="login-icon" class="login-icon--hover">
+							</button>
+
+						</div><!-- ./user-auth -->
+
+					</footer>
+
+				</div><!-- ./side-menu -->
+
+			</aside><!-- ./sidebar-left -->
+
+			<main class="main-content">
+
+				<div class="alerts">
+
+					<div class="alert  alert--warning">
+						<div class="alert-content">
+							<div class="alert-content__title">
+								На Вашем счету осталось $5.89. Пополните счет!
+							</div>
+
+							<div class="alert-content__text">
+								Этих средств достаточно на 3 дня работоспособности выбранных услуг.
+							</div>
+
+							<div class="alert-content__pay-link">
+								<a href="#">Пополнить счет</a>
+							</div>
+
+						</div>
+
+						<svg class="alert-close" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11 1L1 11M1 1L11 11" stroke="#F79009" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+					</div>
+
+				</div>
+
+				<div class="alerts">
+
+					<div class="alert  alert--info">
+						<div class="alert-content">
+							<div class="alert-content__title">
+								На Вашем счету осталось $5.89. Пополните счет!
+							</div>
+
+							<div class="alert-content__text">
+								Этих средств достаточно на 3 дня работоспособности выбранных услуг.
+							</div>
+
+							<div class="alert-content__pay-link">
+								<a href="#">Пополнить счет</a>
+							</div>
+
+						</div>
+
+						<svg class="alert-close" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11 1L1 11M1 1L11 11" stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+					</div>
+
+				</div>
+
+				<div class="alerts">
+
+					<div class="alert  alert--danger">
+						<div class="alert-content">
+							<div class="alert-content__text">
+								Что-то пошло не так. Попробуйте еще раз
+							</div>
+
+						</div>
+
+						<svg class="alert-close" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11 1L1 11M1 1L11 11" stroke="#FF6060" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+
+					</div>
+
+				</div>
+
+				<div class="v-numbers">
+
+					<div class="v-numbers__inner">
+						<div class="v-numbers__heading">
+							<a href="" class="v-numbers__main-link">
+								<span class="v-numbers__title">Виртуальные номера</span>
+								<span class="v-numbers__counter--more-digits">10</span>
+							</a>
+
+						</div><!-- v-numbers__heading -->
+
+						<ul class="v-numbers__list">
+							<li class="v-numbers__list-item">
+								<a href="#" class="v-numbers__number">
+									+17866018512
+									<span class="v-numbers__status">Входящий</span>
+									<span class="v-numbers__date">до 28.10.2022</span>
+								</a>
+
+							</li>
+
+							<li class="v-numbers__list-item">
+								<a href="#" class="v-numbers__number">
+									+380501114456
+									<span class="v-numbers__status">Двухсторонний</span>
+									<span class="v-numbers__date">до 22.11.2022</span>
+								</a>
+
+							</li>
+
+							<li class="v-numbers__list-item">
+								<a href="#" class="v-numbers__number">
+									+17866018512
+									<span class="v-numbers__date">до 14.12.2022</span>
+								</a>
+
+							</li>
+
+						</ul><!-- v-numbers__list -->
+
+						<div class="v-numbers__actions">
+							<button type="button" class="btn btn--secondary">Добавить номер</button>
+							<button type="button" class="btn btn--stroke">Смотреть все</button>
+						</div><!-- v-numbers__actions -->
+
+					</div><!-- numbers__inner -->
+
+				</div><!-- v-numbers -->
+
+				<div class="employees">
+					<div class="employees__inner">
+						<div class="employees__heading">
+							<a href="#" class="employees__main-link">
+								<span class="employees__title">Мониторинг звонков</span>
+								<span class="employees__counter">4</span>
+							</a>
+
+						</div><!-- ./employees__heading -->
+
+						<ul class="employees__list">
+							<li class="employees__list-item">
+								<a href="#" class="employees__link">
+									<span class="employees__name">ekateg569</span>
+								</a>
+
+								<span class="employees__phone">+380679016543</span>
+								<span class="employees__time  employees__time--green">00:09:46</span>
+								<button class="employees__connect-call" type="button">
+									<img src="./img/phone-icon.svg" alt="phone-icon" class="employees__phone-icon">
+								</button>
+
+							</li>
+
+							<li class="employees__list-item">
+								<a href="#" class="employees__link">
+									<span class="employees__name">marina1981</span>
+								</a>
+
+								<span class="employees__phone">+380506604241</span>
+								<span class="employees__time employees__time--green">00:02:31</span>
+								<button class="employees__connect-call" type="button">
+									<img src="./img/phone-icon.svg" alt="phone-icon" class="employees__phone-icon">
+								</button>
+
+							</li>
+
+							<li class="employees__list-item">
+								<a href="#" class="employees__link">
+									<span class="employees__name">usyk421</span>
+								</a>
+
+								<span class="employees__time">00:56:21</span>
+							</li>
+
+						</ul><!-- ./employees__list -->
+
+						<div class="employees__actions">
+							<button type="button" class="btn btn--stroke">Смотреть все</button>
+						</div><!-- v-numbers__actions -->
+
+					</div><!-- ./employees__inner -->
+
+				</div><!-- ./employees -->
+
+				<div class="call-list">
+					<div class="call-list__title">
+						Журнал звонков
+					</div><!-- ./call-list__title -->
+
+					<div class="call-list__content">
+						<div class="tab">
+							<button type="button" id="defaultOpen" class="tablinks" onclick="openTab(event, 'all')">
+								Все
+							</button>
+
+							<button type="button" class="tablinks" onclick="openTab(event, 'missing-call')">
+								Пропущенные звонки
+								<span class="tab__marker">3</span>
+							</button>
+
+							<button type="button" class="btn btn--small btn--stroke toggle-filters">
+								<svg width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.75 0.25V2.08333H1.66667L6.25 9.41667V16.75H11.75V9.41667L16.3333 2.08333H17.25V0.25H16.3333H1.66667H0.75ZM3.82943 2.08333H14.1724L9.91667 8.8903V14.9167H8.08333V8.8903L3.82943 2.08333Z"/>
+								</svg>
+								Фильтр
+							</button>
+
+						</div><!-- ./tab -->
+
+						<div class="filter">
+							<div class="filter__phone">
+								<p class="filter__title">Телефон</p>
+								<div class="filter__input">
+									<select id="filter-phone" multiple>
+										<option value='+35148451545'>+35148451545</option>
+										<option value='+35148451545'>+35148451545</option>
+										<option value='+35148451545'>+35148451545</option>
+										<option value='+35148451545'>+35148451545</option>
+										<option value='+35148451545'>+35148451545</option>
+										<option value='+35148451545'>+35148451545</option>
+										<option value='+35148451545'>+35148451545</option>
+									</select>
+
+								</div>
+
+							</div><!-- ./filter-phone -->
+
+							<div class="filter__employee">
+								<span class="filter__title">Сотрудник</span>
+
+								<div class="filter__select">
+									<select id="filter-employee" multiple>
+										<option value="ekaterina_vlasova">ekaterina_vlasova</option>
+										<option value="usyk421">usyk421</option>
+										<option value="employee1">employee1</option>
+										<option value="employee2">employee2</option>
+									</select>
+
+								</div><!-- ./filter-select -->
+
+							</div><!-- ./filter-emloyee -->
+
+							<div class="filter__calendar">
+								<span class="filter__title">Дата</span>
+								<div id="filter__date" class="filter__date">
+									<img src="./img/calendar-icon.svg" alt="filter__date-icon" class="filter__date-icon">
+									<span class="filter__date-txt"></span>
+								</div><!-- ./filter-date -->
+
+							</div><!-- ./filter-calendar -->
+
+							<button type="button" class="btn btn--primary btn--search">
+								<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.53334 0.200001C3.49194 0.200001 0.200012 3.49193 0.200012 7.53333C0.200012 11.5747 3.49194 14.8667 7.53334 14.8667C9.29078 14.8667 10.9048 14.2426 12.1697 13.2066L16.5482 17.5852C16.6158 17.6555 16.6967 17.7117 16.7863 17.7504C16.8758 17.7891 16.9722 17.8096 17.0698 17.8106C17.1673 17.8116 17.2641 17.7931 17.3544 17.7562C17.4448 17.7193 17.5268 17.6648 17.5958 17.5958C17.6648 17.5268 17.7193 17.4448 17.7562 17.3544C17.7931 17.2641 17.8116 17.1673 17.8106 17.0698C17.8096 16.9722 17.7892 16.8758 17.7504 16.7862C17.7117 16.6967 17.6555 16.6157 17.5852 16.5482L13.2066 12.1697C14.2426 10.9047 14.8667 9.29077 14.8667 7.53333C14.8667 3.49193 11.5747 0.200001 7.53334 0.200001ZM7.53334 1.66667C10.7821 1.66667 13.4 4.28458 13.4 7.53333C13.4 10.7821 10.7821 13.4 7.53334 13.4C4.28459 13.4 1.66668 10.7821 1.66668 7.53333C1.66668 4.28458 4.28459 1.66667 7.53334 1.66667Z"/>
+								</svg>
+
+							</button><!-- ./btn-search -->
+
+						</div><!-- ./call-list__filters -->
+
+						<div class="filter-tags">
+
+							<div class="filter-tags__phone"></div>
+
+							<div class="filter-tags__employees"></div>
+
+							<div class="filter-tags__date"></div>
+
+							<button class="btn btn--stroke btn--clear">
+								<svg width="12.5" height="12.5" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.71553 0.777496L0.767579 1.72544L6.04901 7.00687L0.736328 12.33L1.67386 13.2675L6.99696 7.95482L12.3096 13.2675L13.2576 12.3195L7.94491 7.00687L13.2263 1.72544L12.2784 0.777496L6.99696 6.05892L1.71553 0.777496Z"/>
+								</svg>
+								Очистить
+							</button><!-- ./btn--clear -->
+
+						</div><!-- ./filter__tags -->
+
+						<div class="clue">
+							<span class="clue__icon"></span>
+							<p class="clue__text">Сторона завершения звонка</p>
+						</div><!-- ./clue -->
+
+						<div id="all" class="tabcontent">
+							<div class="calls-table">
+
+								<div class="calls-table__inner">
+									<div class="calls-table__header">
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<span>Тип</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Статус</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Менеджер</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Клиент</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Время разговора</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Коментарии</span>
+											</div>
+
+											<div class="calls-table__cell">
+											</div>
+										</div><!-- ./calls-table__row -->
+
+									</div><!-- ./calls-table__header -->
+
+									<div class="calls-table__meta">
+										<div class="calls-table__meta-item">
+											<img src="./img/meta-calendar-icon.svg" alt="calls-table__meta-icon" class="calls-table__meta-icon">
+											<span class="calls-table__meta-text">Выберите дату нажав "Фильтр"</span>
+										</div>
+
+									</div><!-- ./calls-table__header -->
+									
+									<div class="calls-table__body">
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/callback-icon.svg" alt="call-back-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<img src="./img/call-and-answer-icon.svg" alt="call-and-answer-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__name">Екатерина Власова</p>
+												<p class="calls-table__number">0 800 451 21 46</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__name">Кирилл Унцов
+													<span class="who-end-call__icon"></span>
+												</p>
+												<p class="calls-table__number">0 800 451 21 46</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<div class="calls-table__start-call">
+													<span class="calls-table__text">Начало</span>
+													<span class="calls-table__time">13:37:01</span>
+												</div>
+
+												<div class="calls-table__end-call">
+													<span class="calls-table__text">Конец</span>
+													<span class="calls-table__time">13:38:44</span>
+												</div>
+
+												<div class="calls-table__duration-call">
+													<span class="calls-table__text">Продолж.</span>
+													<span class="calls-table__time">00:01:43</span>
+												</div>
+												
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__text">набрать еще раз</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<button class="btn-play">
+													<img src="./img/play-icon.svg" alt="play-icon" class="calls-table__actions-icon--play">
+												</button>
+												<button class="btn-download">
+													<img src="./img/download-icon.svg" alt="download-icon" class="calls-table__actions-icon--download">
+												</button>
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/we-call-icon.svg" alt="we-call-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<img src="./img/no-answer-icon.svg" alt="no-answer-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__name">Кирилл Унцов
+													<span class="who-end-call__icon"></span>
+												</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__number">+38 (093) 629 76 66</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<div class="calls-table__scheduled-call">
+													<span class="calls-table__text">Звонок</span>
+													<span class="calls-table__time">14:48:00</span>
+												</div>
+
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__text"></p>
+											</div>
+
+											<div class="calls-table__cell">
+												<button class="btn-play">
+													<img src="./img/play-icon.svg" alt="play-icon" class="calls-table__actions-icon--play">
+												</button>
+
+												<button class="btn-download">
+													<img src="./img/download-icon.svg" alt="download-icon" class="calls-table__actions-icon--download">
+												</button>
+
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/we-call-icon.svg" alt="we-call-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<img src="./img/end-call-icon.svg" alt="end-call-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__name">marina_1988</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__number">+38 (093) 629 76 66<span
+														class="who-end-call__icon"></span></p>
+											</div>
+
+											<div class="calls-table__cell">
+												<div class="calls-table__scheduled-call">
+													<span class="calls-table__text">Звонок</span>
+													<span class="calls-table__time">14:49:56</span>
+												</div>
+
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__text"></p>
+											</div>
+
+											<div class="calls-table__cell">
+												<button class="btn-play">
+													<img src="./img/play-icon.svg" alt="play-icon" class="calls-table__actions-icon--play">
+												</button>
+
+												<button class="btn-download">
+													<img src="./img/download-icon.svg" alt="download-icon" class="calls-table__actions-icon--download">
+												</button>
+
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/callback-icon.svg" alt="call-back-icon" class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<img src="./img/call-miss-icon.svg" alt="end-call-icon" class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__name">marina_1988</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__number">+38 (093) 629 76 66</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<div class="calls-table__scheduled-call">
+													<span class="calls-table__text">Звонок</span>
+													<span class="calls-table__time">15:02:23</span>
+												</div>
+
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__text">не брать трубку</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<button class="btn-play">
+													<img src="./img/play-icon.svg" alt="play-icon" class="calls-table__actions-icon--play">
+												</button>
+												<button class="btn-download">
+													<img src="./img/download-icon.svg" alt="download-icon" class="calls-table__actions-icon--download">
+												</button>
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/we-call-icon.svg" alt="we-call-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<img src="./img/call-and-answer-icon.svg" alt="call-and-answer-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__name">Кирилл Унцов</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__number">+38 (093) 629 76 66</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<div class="calls-table__start-call">
+													<span class="calls-table__text">Начало</span>
+													<span class="calls-table__time">15:21:01</span>
+												</div>
+
+												<div class="calls-table__end-call">
+													<span class="calls-table__text">Конец</span>
+													<span class="calls-table__time">15:24:15</span>
+												</div>
+
+												<div class="calls-table__duration-call">
+													<span class="calls-table__text">Продолж.</span>
+													<span class="calls-table__time">00:03:14</span>
+												</div>	
+
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__text">перезвон в 10:37</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<button class="btn-play">
+													<img src="./img/play-icon.svg" alt="play-icon" class="calls-table__actions-icon--play">
+												</button>
+
+												<button class="btn-download">
+													<img src="./img/download-icon.svg" alt="download-icon"
+														class="calls-table__actions-icon--download">
+												</button>
+
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/we-call-icon.svg" alt="we-call-icon" class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<img src="./img/call-miss-icon.svg" alt="call-miss-icon"
+													class="calls-table__cell-icon">
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__name">marina_1988</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<p class="calls-table__number">+38 (093) 629 76 66</p>
+											</div>
+
+											<div class="calls-table__cell">
+												<div class="calls-table__start-call">
+													<span class="calls-table__text">Начало</span>
+													<span class="calls-table__time">15:26:06</span>
+												</div>
+
+												<div class="calls-table__end-call">
+													<span class="calls-table__text">Конец</span>
+													<span class="calls-table__time">15:38:44</span>
+												</div>
+
+												<div class="calls-table__duration-call">
+													<span class="calls-table__text">Продолж.</span>
+													<span class="calls-table__time">00:12:37</span>
+												</div>		
+
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__text"></p>
+											</div>
+
+											<div class="calls-table__cell">
+												<button class="btn-play">
+													<img src="./img/play-icon.svg" alt="play-icon"
+														class="calls-table__actions-icon--play">
+												</button>
+
+												<button class="btn-download">
+													<img src="./img/download-icon.svg" alt="download-icon"
+														class="calls-table__actions-icon--download">
+												</button>
+
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+									</div>
+
+								</div>
+
+
+							</div><!-- ./calls-table -->
+
+							<div class="tabcontent__footer">
+								<div class="t-pager">
+
+									<div class="t-pager__prev">Предыдущая</div>
+
+									<div class="t-pager__pages">
+										<a href="#" class="t-pager__page">1</a>
+										<a href="#" class="t-pager__page">2</a>
+										<a href="#" class="t-pager__page">3</a>
+										<a href="#" class="t-pager__page">4</a>
+										<a href="#" class="t-pager__page">5</a>
+										<a href="#" class="t-pager__page">6</a>
+										<a href="#" class="t-pager__page">7</a>
+										<div class="t-pager__more">
+											...
+											<div class="t-pager__choose-page">
+												<div class="t-pager__choose-page-inner  t-pager__choose-page-input">
+													<input type="text" placeholder="Номер">
+												</div>
+
+												<button type="button" class="btn  small  primary  btn--go">
+													<img src="./img/go-icon.svg" alt="go-icon" class="t-pager__go-icon">
+												</button>
+
+											</div>
+
+										</div>
+									</div>
+
+									<div class="t-pager__next">Следущая</div>
+
+									<div class="t-pager__actions">
+										<label class="t-pager__actions-title">Показать по</label>
+										<div class="t-pager__actions-input">
+											<select name="pager-input" class="t-pager__actions-value">
+												<option value="10">10</option>
+												<option value="20">20</option>
+												<option value="50">50</option>
+												<option value="100">100</option>
+											</select>
+
+										</div>
+
+									</div>
+
+								</div><!-- ./t-pager -->
+
+							</div><!-- ./calls-table__footer -->
+
+						</div><!-- ./#all -->
+
+						<div id="missing-call" class="tabcontent">
+							<div class="calls-table">
+								<div class="calls-table__inner">
+									<div class="calls-table__header">
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<span>Тип</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Статус</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Менеджер</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Клиент</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Время разговора</span>
+											</div>
+
+											<div class="calls-table__cell">
+												<span>Прошло времени<br/>co звонка</span>
+											</div>
+
+										</div><!-- ./calls-table__row -->
+
+									</div><!-- ./calls-table__header -->
+
+									<div class="calls-table__meta">
+										<div class="calls-table__meta-item">
+											<img src="./img/meta-calendar-icon.svg" alt="calls-table__meta-icon" class="calls-table__meta-icon">
+										<span class="calls-table__meta-text">Выберите дату нажав "Фильтр"</span>
+										</div>
+								</div><!-- ./calls-table__meta -->
+
+									<div class="calls-table__body">
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/callback-icon.svg" alt="call-back-icon"
+													class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<img src="./img/call-miss-icon.svg" alt="call-miss-icon"
+													class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__name">Екатерина Власова</p>
+												<p class="calls-table__number">0 800 451 21 46</p>
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__name">
+													Кирилл Унцов
+													<span class="who-end-call__icon"></span>
+												</p>
+												<p class="calls-table__number">0 800 451 21 46</p>
+											</div>
+											<div class="calls-table__cell">
+												<div class="calls-table__start-call">
+													<span class="calls-table__text">Начало</span>
+													<span class="calls-table__time">13:37:01</span>
+												</div>
+
+												<div class="calls-table__end-call">
+													<span class="calls-table__text">Конец</span>
+													<span class="calls-table__time">13:38:44</span>
+												</div>
+
+												<div class="calls-table__duration-call">
+													<span class="calls-table__text">Продолж.</span>
+													<span class="calls-table__time">00:01:43</span>
+												</div>
+												
+											</div>
+											<div class="calls-table__cell time-passed">
+												<button type="button" class="btn btn-outline-success">00:00:58</button>
+												<img src="./img/help-icon.svg" alt="help-icon" class="help-icon">
+											</div>
+										</div><!-- ./calls-table__row -->
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/we-call-icon.svg" alt="we-call-icon"
+													class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<img src="./img/call-miss-icon.svg" alt="call-miss-icon"
+													class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__name">
+													Кирилл Унцов
+													<span class="who-end-call__icon"></span>
+												</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__number">+38 (093) 629 76 66</p>
+											</div>
+											<div class="calls-table__cell">
+												<div class="calls-table__scheduled-call">
+													<span class="calls-table__text">Звонок</span>
+													<span class="calls-table__time">14:48:00</span>
+												</div>
+
+											</div>
+											<div class="calls-table__cell  time-passed">
+												<button type="button" class="btn btn-outline-warning">00:03:23</button>
+												<img src="./img/help-icon.svg" alt="help-icon" class="help-icon">
+											</div>
+										</div><!-- ./calls-table__row -->
+										<div class="calls-table__row">
+											<div class="calls-table__cell">
+												<img src="./img/we-call-icon.svg" alt="we-call-icon"
+													class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<img src="./img/call-miss-icon.svg" alt="call-miss-icon"
+													class="calls-table__cell-icon">
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__name">marina_1988</p>
+												<p class="calls-table__number">0 800 232 33 18</p>
+											</div>
+											<div class="calls-table__cell">
+												<p class="calls-table__number">
+													+38 (093) 629 76 66
+													<span class="who-end-call__icon"></span>
+												</p>
+											</div>
+											<div class="calls-table__cell">
+												<div class="calls-table__scheduled-call">
+													<span class="calls-table__text">Звонок</span>
+													<span class="calls-table__time">14:49:56</span>
+												</div>
+											</div>
+											<div class="calls-table__cell  time-passed">
+												<svg width="4" height="18" viewBox="0 0 4 18" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.714111 15.7777C0.714111 14.9658 1.3595 14.3426 2.17178 14.3426C3.00582 14.3426 3.64011 14.9654 3.64011 15.7777C3.64011 16.5895 3.00582 17.2127 2.17178 17.2127C1.35907 17.2127 0.714111 16.59 0.714111 15.7777ZM1.09229 10.761C1.09229 10.761 0.958692 2.03976 0.958692 2.00647C0.958692 1.2612 1.4598 0.782715 2.18245 0.782715C2.89442 0.782715 3.39553 1.2612 3.39553 2.00647C3.39553 2.03976 3.26193 10.761 3.26193 10.761C3.23973 11.4619 2.86155 11.8955 2.17178 11.8955C1.49267 11.8955 1.11449 11.4619 1.09229 10.761Z"
+														fill="#FF6060"/>
+												</svg>
+												<button type="button" class="btn btn-outline-danger">00:10:14</button>
+												<img src="./img/help-icon.svg" alt="help-icon" class="help-icon">
+											</div>
+										</div><!-- ./calls-table__row -->
+									</div>
+
+								</div><!-- ./calls-table__inner -->
+
+							</div><!-- ./calls-table -->
+
+							<div class="tabcontent__footer">
+								<div class="t-pager">
+
+									<div class="t-pager__prev">Предыдущая</div>
+
+									<div class="t-pager__pages">
+										<span class="t-pager__page">1</span>
+									</div>
+
+									<div class="t-pager__next">Следущая</div>
+
+									<div class="t-pager__actions">
+										<label class="t-pager__actions-title">Показать по</label>
+										<div class="t-pager__actions-input">
+											<select name="pager-input" class="t-pager__actions-value">
+												<option value="10">10</option>
+												<option value="20">20</option>
+												<option value="50">50</option>
+												<option value="100">100</option>
+											</select>
+
+										</div>
+
+									</div>
+
+								</div><!-- ./t-pager -->
+
+							</div><!-- ./calls-table__footer -->
+
+						</div><!-- ./#missing-call -->
+
+					</div><!-- ./call-list-content -->
+
+				</div><!-- ./call-list -->
+
+			</main><!-- ./main-contens -->
+
+			<aside class="sidebar sidebar--right">
+				<div class="sidebar__close" id="sidebar-right-close">
+					<div class="sidebar__arrow">
+						<svg class="close-arrow" width="13" height="10" viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.40875 0.855489C8.27792 0.878657 8.17298 0.974055 8.13618 1.1008C8.09939 1.22891 8.13754 1.36519 8.23431 1.45514L11.4397 4.66052H1.13667C1.12576 4.66052 1.11486 4.66052 1.10396 4.66052C0.911799 4.67006 0.761887 4.8336 0.771427 5.02576C0.780967 5.21792 0.944507 5.36783 1.13667 5.35829H11.4397L8.23431 8.56368C8.13073 8.64817 8.08303 8.78309 8.11301 8.91392C8.143 9.04339 8.24521 9.14561 8.37468 9.17559C8.50551 9.20557 8.64043 9.15787 8.72493 9.0543L12.53 5.26017L12.7698 5.00941L12.53 4.75864L8.72493 0.964515C8.6527 0.886834 8.54776 0.847312 8.44146 0.855489C8.43055 0.855489 8.41965 0.855489 8.40875 0.855489Z"/>
+						</svg>
+
+					</div>
+
+					<span class="sidebar-right__text sidebar-right__text--open">Открыть панель звонка</span>
+
+				</div>
+
+				<div class="phone-panel phone-panel--in-call">
+					<header class="phone-panel__header">
+						<img src="./img/ping-icon.svg" alt="ping-icon" class="phone-panel__ping-icon">
+						<p class="phone-panel__time"> 84 ms</p>
+					</header>
+
+					<div class="phone-panel__display">
+						<div class="phone-panel__account">
+							<p class="phone-panel__account-title">Выберите аккаунт</p>
+							<div class="phone-panel__account-select">
+								<select id="phone-acount">
+									<option value='babanovdmitriy'>babanovdmitriy</option>
+									<option value='babanovdmitriy2'>babanovdmitriy 2</option>
+									<option value='babanovdmitriy3'>babanovdmitriy 3</option>
+									<option value='babanovdmitriy4'>babanovdmitriy 4</option>
+									<option value='babanovdmitriy5'>babanovdmitriy 5</option>
+									<option value='babanovdmitriy6'>babanovdmitriy 6</option>
+									<option value='babanovdmitriy7'>babanovdmitriy 7</option>
+								</select>
+
+							</div>
+
+						</div>
+
+						<div class="phone-panel__input">
+							<input type="tel" class="phone-panel__input-active" name="tel[]" value="" placeholder="Введите номер">
+							<div id="autocomplete-serch"></div>
+
+							<input type="hidden" class="phone-panel__input-hidden">
+							<button type="button" class="phone-panel__input-clear">
+								<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23 16V8C23 6.895 22.105 6 21 6H8C7.766 6 7.54 6.082 7.36 6.232L1.36 11.232C1.132 11.422 1 11.703 1 12C1 12.297 1.132 12.578 1.36 12.768L7.36 17.768C7.54 17.918 7.766 18 8 18H21C22.105 18 23 17.105 23 16ZM15.914 12L17.207 10.707C17.597 10.317 17.597 9.683 17.207 9.293C16.817 8.903 16.183 8.903 15.793 9.293L14.5 10.586L13.207 9.293C12.817 8.903 12.183 8.903 11.793 9.293C11.403 9.683 11.403 10.317 11.793 10.707L13.086 12L11.793 13.293C11.403 13.683 11.403 14.317 11.793 14.707C12.183 15.097 12.817 15.097 13.207 14.707L14.5 13.414L15.793 14.707C16.183 15.097 16.817 15.097 17.207 14.707C17.597 14.317 17.597 13.683 17.207 13.293L15.914 12Z" />
+								</svg>
+
+							</button>
+
+						</div>
+
+
+						<div class="phone-panel__numbers">
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="1"><span>1</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="2"><span>2</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="3"><span>3</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="4"><span>4</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="5"><span>5</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="6"><span>6</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="7"><span>7</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="8"><span>8</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="9"><span>9</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number  phone-panel__number--star" data-number="*">
+									<span>*</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number" data-number="0"><span>0</span></button>
+							</div>
+
+							<div class="phone-panel__number-wrap">
+								<button type="button" class="phone-panel__number  phone-panel__number--pound" data-number="#">
+									<span>#</span></button>
+							</div>
+
+							
+						</div>
+
+						<div class="phone-panel__call-process">
+							<div class="phone-panel__call-image-wrapper">
+								<img src="./img/outgoing-call-image.svg" alt="outgoing-call-image" class="phone-panel__outgoing-call-image">
+								<img src="./img/unavailable-call-image.svg" alt="unavailable-call-image" class="phone-panel__unavailable-call-image">
+								<img src="./img/incoming-call-image.svg" alt="incoming-call-image" class="phone-panel__incoming-call-image">
+							</div>
+
+							<div class="phone-panel__call-info">
+								<span class="phone-panel__call-name">Вадим Стройка</span>
+								<span class="phone-panel__call-number">380679016544</span>
+								<span class="phone-panel__call-status  phone-panel__call-status--outgoing">Исходящий звонок</span>
+								<span class="phone-panel__call-status  phone-panel__call-status--unavailable">Абонент недоступен</span>
+								<span class="phone-panel__call-status  phone-panel__call-status--incoming">Входящий звонок</span>
+							</div>
+
+							<div class="phone-panel__call-time">
+								<span>00:13:42</span>
+							</div>
+
+							<div class="phone-panel__control-button-wrap">
+								<button class="phone-panel__control-btn  phone-panel__control-btn--sound-off">
+									<svg class="phone-panel__btn-icon  phone-panel__btn-icon--sound-off" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_309_5454)">
+											<path d="M1.36563 0.234375L0.234375 1.36563L22.6344 23.7656L23.7656 22.6344L17.0781 15.9469C17.4106 15.2326 17.6 14.4391 17.6 13.6V10.4C17.6 9.9576 17.2424 9.6 16.8 9.6C16.3576 9.6 16 9.9576 16 10.4V13.6C16 13.9832 15.9302 14.3465 15.8266 14.6953L14.4 13.2688V4C14.4 2.6744 13.3256 1.6 12 1.6C10.6744 1.6 9.6 2.6744 9.6 4V8.46875L1.36563 0.234375ZM6.57969 9.91563C6.47409 10.0508 6.4 10.2144 6.4 10.4V13.6C6.4 16.4152 8.4912 18.7455 11.2 19.1359V20.8H8.8C8.3576 20.8 8 21.1576 8 21.6C8 22.0424 8.3576 22.4 8.8 22.4H15.2C15.6424 22.4 16 22.0424 16 21.6C16 21.1576 15.6424 20.8 15.2 20.8H12.8V19.1359C13.5952 19.0215 14.3347 18.7362 14.9859 18.3234L13.8094 17.1469C13.2638 17.4277 12.6544 17.6 12 17.6C9.7944 17.6 8 15.8056 8 13.6V11.3375L6.57969 9.91563ZM9.6 12.9375V13.6C9.6 14.9256 10.6744 16 12 16C12.2024 16 12.3956 15.9675 12.5828 15.9203L9.6 12.9375Z" />
+										</g>
+										<defs>
+											<clipPath id="clip0_309_5454">
+												<rect width="24" height="24" fill="white"/>
+											</clipPath>
+										</defs>
+									</svg>									
+									Отключить
+								</button>
+								
+								<button class="phone-panel__control-btn  phone-panel__control-btn--pause">
+									<svg class="phone-panel__btn-icon  phone-panel__btn-icon--pause" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6 5C6 3.895 6.895 3 8 3C9.105 3 10 3.895 10 5V9V15V19C10 20.105 9.105 21 8 21C6.895 21 6 20.105 6 19V15V9V5ZM14 5C14 3.895 14.895 3 16 3C17.105 3 18 3.895 18 5V9V15V19C18 20.105 17.105 21 16 21C14.895 21 14 20.105 14 19V15V9V5Z"/>
+									</svg>									
+									Пауза
+								</button>
+
+								<button class="phone-panel__control-btn  phone-panel__control-btn--keys">
+									<svg class="phone-panel__btn-icon  phone-panel__btn-icon--keys" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.90723C8 6.28794 6.88071 7.40723 5.5 7.40723C4.11929 7.40723 3 6.28794 3 4.90723C3 3.52651 4.11929 2.40723 5.5 2.40723C6.88071 2.40723 8 3.52651 8 4.90723ZM8 11.9072C8 13.2879 6.88071 14.4072 5.5 14.4072C4.11929 14.4072 3 13.2879 3 11.9072C3 10.5265 4.11929 9.40723 5.5 9.40723C6.88071 9.40723 8 10.5265 8 11.9072ZM5.5 21.4072C6.88071 21.4072 8 20.2879 8 18.9072C8 17.5265 6.88071 16.4072 5.5 16.4072C4.11929 16.4072 3 17.5265 3 18.9072C3 20.2879 4.11929 21.4072 5.5 21.4072ZM15 4.90723C15 6.28794 13.8807 7.40723 12.5 7.40723C11.1193 7.40723 10 6.28794 10 4.90723C10 3.52651 11.1193 2.40723 12.5 2.40723C13.8807 2.40723 15 3.52651 15 4.90723ZM12.5 14.4072C13.8807 14.4072 15 13.2879 15 11.9072C15 10.5265 13.8807 9.40723 12.5 9.40723C11.1193 9.40723 10 10.5265 10 11.9072C10 13.2879 11.1193 14.4072 12.5 14.4072ZM15 18.9072C15 20.2879 13.8807 21.4072 12.5 21.4072C11.1193 21.4072 10 20.2879 10 18.9072C10 17.5265 11.1193 16.4072 12.5 16.4072C13.8807 16.4072 15 17.5265 15 18.9072ZM19.5 7.40723C20.8807 7.40723 22 6.28794 22 4.90723C22 3.52651 20.8807 2.40723 19.5 2.40723C18.1193 2.40723 17 3.52651 17 4.90723C17 6.28794 18.1193 7.40723 19.5 7.40723ZM22 11.9072C22 13.2879 20.8807 14.4072 19.5 14.4072C18.1193 14.4072 17 13.2879 17 11.9072C17 10.5265 18.1193 9.40723 19.5 9.40723C20.8807 9.40723 22 10.5265 22 11.9072ZM19.5 21.4072C20.8807 21.4072 22 20.2879 22 18.9072C22 17.5265 20.8807 16.4072 19.5 16.4072C18.1193 16.4072 17 17.5265 17 18.9072C17 20.2879 18.1193 21.4072 19.5 21.4072Z"/>
+									</svg>
+									Клавиши
+								</button>
+
+								<button class="phone-panel__control-btn  phone-panel__control-btn--add-to-call">
+									<svg class="phone-panel__btn-icon  phone-panel__btn-icon--add" width="31" height="26" viewBox="0 0 31 26"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M25.3 9.4V1M21.1 5.2H29.5M21.1 24.8V23.12C21.1 20.7678 21.1 19.5917 20.6422 18.6932C20.2396 17.903 19.597 17.2604 18.8068 16.8578C17.9083 16.4 16.7322 16.4 14.38 16.4H8.22C5.86778 16.4 4.69167 16.4 3.79324 16.8578C3.00296 17.2604 2.36044 17.903 1.95777 18.6932C1.5 19.5917 1.5 20.7678 1.5 23.12V24.8M16.2 5.9C16.2 8.6062 14.0062 10.8 11.3 10.8C8.5938 10.8 6.4 8.6062 6.4 5.9C6.4 3.1938 8.5938 1 11.3 1C14.0062 1 16.2 3.1938 16.2 5.9Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									Добавить
+								</button>
+
+								<div class="phone-table__add-to-call-wrap">
+									<ul class="phone-table__add-to-call-menu">
+										<li class="phone-table__add-to-call-list">
+											<a href="#" class="phone-table__add-to-call-link  phone-table__add-to-call-link--group">Группу</a>
+										</li>
+										<li class="phone-table__add-to-call-list">
+											<a href="#" class="phone-table__add-to-call-link  phone-table__add-to-call-link--user">Пользователя</a>
+										</li>
+										<li class="phone-table__add-to-call-list">
+											<a href="#" class="phone-table__add-to-call-link  phone-table__add-to-call-link--ivr">IVR</a>
+										</li>
+										<li class="phone-table__add-to-call-list">
+											<a href="#" class="phone-table__add-to-call-link  phone-table__add-to-call-link--other">Другой номер</a>
+										</li>
+									</ul>
+
+								</div>
+
+								<button class="phone-panel__control-btn  phone-panel__control-btn--forward-call">
+									<svg class="phone-panel__btn-icon  phone-panel__btn-icon--forward" width="31" height="28" viewBox="0 0 31 28"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M25.3 26.2L29.5 22M29.5 22L25.3 17.8M29.5 22H21.1M20.4 1.40706C22.4523 2.2378 23.9 4.24984 23.9 6.6C23.9 8.95017 22.4523 10.9622 20.4 11.7929M15.5 17.8H9.9C7.29073 17.8 5.98609 17.8 4.95697 18.2263C3.58482 18.7946 2.49464 19.8848 1.92627 21.257C1.5 22.2861 1.5 23.5907 1.5 26.2M17.6 6.6C17.6 9.6928 15.0928 12.2 12 12.2C8.90721 12.2 6.4 9.6928 6.4 6.6C6.4 3.50721 8.90721 1 12 1C15.0928 1 17.6 3.50721 17.6 6.6Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									Перевести
+								</button>
+
+							</div>
+
+							<div class="phone-panel__call-message">
+								<p>Не брать трубку.</p> 
+								<p>Оператор Александр с ним  общался уже. Неадекват.</p>
+							</div>
+
+
+							
+						</div>
+											
+						<footer class="phone-panel__footer">
+							<div class="phone-panel__actions-wrap  phone-panel__actions-wrap--call">
+								<button class="phone-panel__number call-button" data-number="">
+									<img src="./img/call-button-icon.svg" alt="call-button-icon" class="call-button-icon">
+								</button>
+
+							</div>
+
+							<div class="phone-panel__actions-wrap  phone-panel__actions-wrap--end-call">
+								<button class="phone-panel__number end-call-button" data-number="">
+									<img src="./img/call-button-icon.svg" alt="call-button-icon" class="call-button-icon">
+								</button>
+
+							</div>
+							<div class="phone-table__volume-control">
+								<button class="phone-panel__mute-button">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0703 4.17969C18.8783 4.17956 18.6861 4.25194 18.5391 4.39844C18.2461 4.69144 18.2461 5.16794 18.5391 5.46094C20.2871 7.20894 21.25 9.531 21.25 12C21.25 14.468 20.2871 16.7911 18.5391 18.5391C18.2461 18.8321 18.2461 19.3066 18.5391 19.5996C18.6861 19.7466 18.8773 19.8203 19.0703 19.8203C19.2623 19.8203 19.4556 19.7466 19.6016 19.5996C21.6326 17.5676 22.75 14.869 22.75 12C22.75 9.13 21.6326 6.43044 19.6016 4.39844C19.4556 4.25244 19.2623 4.17981 19.0703 4.17969ZM8.80273 5.33984C8.48261 5.37597 8.17275 5.50284 7.90625 5.71484L4.80469 8.19531C4.76069 8.23031 4.70639 8.25 4.65039 8.25H3C2.035 8.25 1.25 9.035 1.25 10V14C1.25 14.965 2.035 15.75 3 15.75H4.65039C4.70639 15.75 4.76069 15.7697 4.80469 15.8047L7.90625 18.2852C8.22525 18.5402 8.60809 18.6719 8.99609 18.6719C9.25409 18.6719 9.51577 18.6131 9.75977 18.4961C10.3708 18.2021 10.75 17.5989 10.75 16.9199V7.08008C10.75 6.40108 10.3708 5.79791 9.75977 5.50391C9.45377 5.35741 9.12286 5.30372 8.80273 5.33984ZM16.2363 7.00977C16.0443 7.01077 15.8525 7.08397 15.707 7.23047C15.415 7.52547 15.4189 8.00002 15.7129 8.29102C16.7059 9.27502 17.25 10.59 17.25 11.998C17.25 13.407 16.7059 14.724 15.7129 15.707C15.4189 15.998 15.415 16.4726 15.707 16.7676C15.854 16.9146 16.0462 16.9902 16.2402 16.9902C16.4302 16.9902 16.6235 16.9174 16.7695 16.7734C18.0465 15.5064 18.75 13.81 18.75 11.998C18.75 10.187 18.0465 8.49356 16.7695 7.22656C16.622 7.08106 16.4283 7.00877 16.2363 7.00977ZM13.4004 9.83984C13.2084 9.84259 13.017 9.91891 12.873 10.0664C12.584 10.3634 12.5897 10.837 12.8867 11.127C13.1207 11.355 13.25 11.665 13.25 12C13.25 12.335 13.1207 12.644 12.8867 12.873C12.5897 13.162 12.584 13.6366 12.873 13.9336C13.019 14.0846 13.2152 14.1602 13.4102 14.1602C13.5992 14.1602 13.7866 14.0893 13.9336 13.9473C14.4596 13.4343 14.75 12.743 14.75 12C14.75 11.256 14.4596 10.5657 13.9336 10.0527C13.7846 9.90823 13.5924 9.83709 13.4004 9.83984Z" fill="#667085"/>
+									</svg>
+								</button>
+
+								<div class="phone-panel__volume-wrap">
+									<div class="phone-panel__volume"></div>
+								</div>
+
+							</div>
+
+						</footer>
+						
+					</div>
+
+				</div>
+
+			</aside><!-- ./sidebar-right -->
+
+		</div><!-- ./site-wrapper -->
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/jquery-ui.js"></script>
+		<script src="./js/select2.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script src="./js/input_mask.js"></script>
+		<script src="./js/main.js"></script>
+	</body><!-- ./home-page -->
+
+</html>
